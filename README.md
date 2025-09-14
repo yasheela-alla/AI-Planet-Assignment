@@ -153,6 +153,9 @@ prefect deploy test_flow.py:test_ecs_flow --name test-ecs-deployment --pool ecs-
 python test_flow.py
 ```
 
+<img width="1108" height="291" alt="Screenshot 2025-09-14 215056" src="https://github.com/user-attachments/assets/b22a2a52-2dde-461e-b939-d12abbbba41d" />
+
+
 ---
 
 ## Outputs
@@ -161,7 +164,7 @@ python test_flow.py
 * **Instructions to verify the work pool in Prefect Cloud**
 
   
-<img width="1070" height="558" alt="Screenshot 2025-09-14 201013" src="https://github.com/user-attachments/assets/5ac5fd92-67e4-420b-8641-8dc0cf8a7407" />
+<img width="1092" height="311" alt="Screenshot 2025-09-14 215439" src="https://github.com/user-attachments/assets/cbe83c79-4c5a-4075-a4a3-42d0d3d05141" />
 
 ---
 
@@ -180,6 +183,7 @@ python test_flow.py
 ```bash
 terraform destroy
 ```
+
 
 
 

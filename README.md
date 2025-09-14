@@ -12,7 +12,7 @@ This project demonstrates deploying a Prefect worker on **AWS ECS Fargate** usin
 - **ECS Cluster**: Fargate cluster for serverless container execution  
 - **IAM Roles**: Task execution role with ECS and Secrets Manager permissions  
 - **Networking**: NAT Gateway for outbound access from private subnets  
-- **Orchestration**: Prefect Cloud push work pool integration  
+- **Orchestration**: Prefect Cloud work pool integration  
 
 ---
 
@@ -55,7 +55,7 @@ aws configure
 Enter your credentials when prompted:
 AWS Access Key ID: <your-access-key-id>
 AWS Secret Access Key: <your-secret-access-key>
-Default region name: us-east-1
+Default region name: <your-region>
 Default output format: json
 ````
 
@@ -64,7 +64,7 @@ Default output format: json
 Create a file named `terraform.tfvars` in the root directory of the repo and include your credentials:
 
 ```hcl
-aws_region           = "us-east-1"
+aws_region           = "<any-region>"
 prefect_account_id   = "<your-account-id>"
 prefect_workspace_id = "<your-workspace-id>"
 ```
@@ -83,8 +83,8 @@ prefect_workspace_id = "<your-workspace-id>"
 
 ```bash
 # Clone repo
-git clone https://github.com/shaluchan/AI-PLANET-Assignment.git
-cd AI-PLANET-Assignment
+git clone https://github.com/yasheela-alla/AI-Planet-Assignment
+cd AI-Planet-Assignment
 
 # Initialize Terraform
 terraform init
@@ -100,7 +100,7 @@ terraform apply
 
 ```bash
 # Install Prefect with AWS support
-pip install "prefect[aws]"
+pip install "prefect-aws"
 
 # Configure Prefect API URL
 prefect config set PREFECT_API_URL="https://api.prefect.io"
@@ -168,5 +168,6 @@ python test_flow.py
 ```bash
 terraform destroy
 ```
+
 
 

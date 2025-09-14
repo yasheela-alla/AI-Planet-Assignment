@@ -80,23 +80,29 @@ prefect_workspace_id = "<your-workspace-id>"
 ## Deployment Instructions
 
 ### 1. Infrastructure Setup
+Clone repo
 
 ```bash
-# Clone repo
 git clone https://github.com/yasheela-alla/AI-Planet-Assignment
 cd AI-Planet-Assignment
+````
+Initialize Terraform
 
-# Initialize Terraform
+```bash
 terraform init
+```
+Review plan
 
-# Review planned changes
+```bash
 terraform plan
+```
+Deploy
 
-# Deploy infrastructure
+```bash
 terraform apply
 ```
 
-### 2. Prefect Configuration
+### 2. Configuration
 
 ```bash
 # Install Prefect with AWS support
@@ -168,6 +174,7 @@ python test_flow.py
 ```bash
 terraform destroy
 ```
+
 
 
 

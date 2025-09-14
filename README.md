@@ -27,13 +27,13 @@ This project demonstrates deploying a Prefect worker on **AWS ECS Fargate** usin
 ---
 
 ## Technical Challenge
-**Problem:** Prefect Cloud free tier does not support ECS pull work pools.  
+**Problem:** Prefect Cloud's free tier does not support ECS work pools (requires paid Hybrid plan)  
 
-**Solution:** Implemented full ECS integration with a push work pool:  
-- Full control of work pool configuration  
-- Works without paid plan limitations  
-- Easy debugging  
-- Cost-effective development  
+**Solution:** Implemented local Prefect server with full ECS integration, providing:  
+- Complete control over work pool configuration
+- No vendor limitations
+- Enhanced debugging capabilities
+- Cost-effective development environment
 
 ---
 
@@ -168,3 +168,4 @@ python test_flow.py
 ```bash
 terraform destroy
 ```
+

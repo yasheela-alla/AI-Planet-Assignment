@@ -52,11 +52,11 @@ This project demonstrates deploying a Prefect worker on **AWS ECS Fargate** usin
 ### 1. AWS CLI Setup
 ```bash
 aws configure
-# Enter your credentials when prompted:
-# AWS Access Key ID: <your-access-key-id>
-# AWS Secret Access Key: <your-secret-access-key>
-# Default region name: us-east-1
-# Default output format: json
+Enter your credentials when prompted:
+AWS Access Key ID: <your-access-key-id>
+AWS Secret Access Key: <your-secret-access-key>
+Default region name: us-east-1
+Default output format: json
 ````
 
 ### 2. Terraform Variables
@@ -168,4 +168,5 @@ python test_flow.py
 ```bash
 terraform destroy
 ```
+
 

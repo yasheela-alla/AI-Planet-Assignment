@@ -35,6 +35,8 @@ This project demonstrates deploying a Prefect worker on **AWS ECS Fargate** usin
 - Enhanced debugging capabilities
 - Cost-effective development environment
 
+<img width="1919" height="1008" alt="Screenshot 2025-09-14 200731" src="https://github.com/user-attachments/assets/4783b432-dd6c-4f4a-aa7f-792625116a1b" />
+
 ---
 
 ## Prerequisites
@@ -138,6 +140,9 @@ prefect worker start --pool ecs-work-pool
 1. Open Prefect UI → Work Pools → `ecs-work-pool`
 2. Verify worker status: `Online`
 
+<img width="1919" height="669" alt="Screenshot 2025-09-14 200531" src="https://github.com/user-attachments/assets/cb0244ec-37c2-4445-8f7e-e5335358c235" />
+
+
 ### End-to-End Test
 
 ```bash
@@ -153,9 +158,10 @@ python test_flow.py
 ## Outputs
 
 * **ECS Cluster ARN**: `arn:aws:ecs:us-east-1:<account-id>:cluster/prefect-cluster`
-* **VPC ID**: `vpc-04b6b5e3f03eb8b96`
-* **Private Subnets**: 3 subnets across AZs
-* **Task Execution Role**: Configured with Secrets Manager access
+* **Instructions to verify the work pool in Prefect Cloud**
+
+  
+<img width="1070" height="558" alt="Screenshot 2025-09-14 201013" src="https://github.com/user-attachments/assets/5ac5fd92-67e4-420b-8641-8dc0cf8a7407" />
 
 ---
 
@@ -174,6 +180,7 @@ python test_flow.py
 ```bash
 terraform destroy
 ```
+
 
 
 

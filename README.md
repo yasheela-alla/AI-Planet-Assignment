@@ -207,6 +207,7 @@ python test_flow.py
 terraform destroy
 ```
 
+<img width="1246" height="318" alt="image" src="https://github.com/user-attachments/assets/4089a299-6323-4585-915d-a194a1395fcf" />
 
 
 

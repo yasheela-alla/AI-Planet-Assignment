@@ -37,21 +37,28 @@ This project demonstrates deploying a Prefect worker on **AWS ECS Fargate** usin
 
 <img width="1919" height="1008" alt="Screenshot 2025-09-14 200731" src="https://github.com/user-attachments/assets/4783b432-dd6c-4f4a-aa7f-792625116a1b" />
 
+----
+
 **Problem:** Virtual Environment Activation
 
-Initially, I faced repeated errors when trying to install and run Prefect.  
-I was directly installing packages into the system Python and attempting to run commands, which led to conflicts and unexpected behavior.
+- Initially, I faced repeated errors when trying to install and run Prefect.
+- I was directly installing packages into the system Python and attempting to run commands, which led to conflicts and unexpected behavior.
 
-**Solution:** At first, I didn’t realize that Prefect strongly recommends running inside a **virtual environment (venv/uv venv)**.  
-When I reviewed the official Prefect documentation, I discovered that I had to create and activate a virtual environment before running any Prefect commands.
+**Solution:** 
+- At first, I didn’t realize that Prefect strongly recommends running inside a **virtual environment (venv/uv venv)**.
+- When I reviewed the official Prefect documentation, I discovered that I had to create and activate a virtual environment before running any Prefect commands.
 
 ```bash
+uv venv
+
 # Create a virtual environment
 python -m venv .venv
 
 # Activate the environment (Windows PowerShell)
 .venv\Scripts\Activate
+```
 
+<img width="1217" height="375" alt="image" src="https://github.com/user-attachments/assets/63169ce6-0216-4736-8ae9-39d1e57848f7" />
 
 ---
 
@@ -199,6 +206,7 @@ python test_flow.py
 ```bash
 terraform destroy
 ```
+
 
 
 
